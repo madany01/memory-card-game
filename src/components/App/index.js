@@ -28,6 +28,14 @@ import {
   scoreReducer,
 } from './scoreReducer'
 
+function importAll(r) {
+  return Object.fromEntries(r.keys().map(item => [item.replace('./', ''), r(item)]))
+}
+
+const IMAGES_DIR = importAll(
+  require.context('../../images', false, /\.(png|svg|jpg|jpeg|gif)$/i)
+)
+
 function saveMaxScoreToLocalStorage(score) {
   const { id: _, ...restScore } = score
   localStorage.setItem('maxScore', JSON.stringify(restScore))
@@ -45,7 +53,7 @@ function getPlaceholderImages(n) {
 
 const ALL_IMAGE_URLS = new Array(NUM_IMAGES)
   .fill(null)
-  .map((_, idx) => `${process.env.PUBLIC_URL}/images/${idx}.png`)
+  .map((_, idx) => IMAGES_DIR[`${idx}.png`])
 
 const GAME_STATE = {
   initial: 'initial',
