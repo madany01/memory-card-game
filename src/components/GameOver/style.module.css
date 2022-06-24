@@ -1,0 +1,77 @@
+.ctr {
+  width: 40rem;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1.6rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.close {
+  font-size: 1.8rem;
+  background-color: transparent;
+  color: tomato;
+  cursor: pointer;
+}
+
+.logs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.log {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.log::before {
+  content: '♦️';
+  color: #9e9e9e;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #808080;
+  text-transform: capitalize;
+}
+.score {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #00c1d4;
+}
+
+.again {
+  padding: 0.8rem 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: #420080;
+  border-radius: 0.8rem;
+  color: #d0d0d0;
+  align-self: end;
+  box-shadow: 0 0 20px 2px rgb(189 124 250 / 15%);
+  transition: all 0.3s;
+}
+
+.again:hover {
+  transform: translateY(1px);
+  box-shadow: 0 0 10px 2px rgb(189 124 250 / 15%);
+}
+
+.achievement {
+  font-size: 1.5rem;
+  color: springgreen;
+  font-weight: 500;
+}

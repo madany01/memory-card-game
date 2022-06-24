@@ -1,0 +1,44 @@
+.card {
+  width: 16rem;
+  height: 17rem;
+  overflow: hidden;
+
+  color: #333;
+  border: 3px solid #333;
+  border-radius: 0.3rem;
+  background-color: #000;
+
+  transition: all 0.3s;
+}
+
+.card:disabled {
+  cursor: auto;
+}
+
+.card:not(:disabled):hover {
+  border-color: #efff10;
+  cursor: pointer;
+}
+
+.card.border-green {
+  border-color: springgreen;
+}
+
+.card.border-red {
+  border-color: tomato;
+}
+
+.noClick {
+  pointer-events: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}

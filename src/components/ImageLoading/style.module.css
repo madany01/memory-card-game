@@ -1,0 +1,19 @@
+.startBtn {
+  padding: 0.8rem 3.4rem;
+  border-radius: 9999rem;
+  background-color: #710039;
+  color: #d1f8fb;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  transition: all 0.3s;
+}
+
+.startBtn:disabled {
+  cursor: wait;
+  filter: grayscale() brightness(0.9);
+}
+
+.startBtn:not(:disabled):hover {
+  background-color: #4b0025;
+}

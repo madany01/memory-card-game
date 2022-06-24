@@ -1,0 +1,45 @@
+.spinner {
+  width: 5rem;
+  height: 5rem;
+
+  border: 4px solid #333;
+  border-radius: 50%;
+
+  border-left-color: #00eeff;
+  border-right-color: #ff0095;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spin {
+  animation: spin 2s infinite linear;
+}
+
+.stop::after {
+  content: '✔';
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 50%;
+  color: #00eeff;
+  animation: show-hide 750ms infinite linear alternate;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes show-hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

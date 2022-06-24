@@ -1,0 +1,17 @@
+.ctr {
+  flex-grow: 1;
+
+  position: relative;
+
+  background-color: #020d3f;
+  padding: 1.6rem;
+  transition: all 0.3s;
+}
+
+.red {
+  background-color: #3f021e;
+}
+
+.green {
+  background-color: #125a50;
+}

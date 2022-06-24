@@ -1,0 +1,11 @@
+.cards{
+  padding: 2rem 0.4rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  
+  background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,41 @@
+
+footer {
+  padding: 4px 0;
+  border-top: 1px solid #e91e6347;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #0b0c1e;
+}
+
+.copyright {
+  color: #9c9c9c;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.githubLink {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  color: #00bcd4;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.githubLink:hover {
+  color: #0b0c1e;
+  background-color: #00bcd4;
+}
+
+.githubLink svg {
+  fill: currentColor;
+}
