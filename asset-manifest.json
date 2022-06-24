@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/madany01/memory-card-game/static/css/main.e094f573.css",
-    "main.js": "/madany01/memory-card-game/static/js/main.4f1786d5.js",
-    "index.html": "/madany01/memory-card-game/index.html",
-    "main.e094f573.css.map": "/madany01/memory-card-game/static/css/main.e094f573.css.map",
-    "main.4f1786d5.js.map": "/madany01/memory-card-game/static/js/main.4f1786d5.js.map"
+    "main.css": "/memory-card-game/static/css/main.e094f573.css",
+    "main.js": "/memory-card-game/static/js/main.c27a7680.js",
+    "index.html": "/memory-card-game/index.html",
+    "main.e094f573.css.map": "/memory-card-game/static/css/main.e094f573.css.map",
+    "main.c27a7680.js.map": "/memory-card-game/static/js/main.c27a7680.js.map"
   },
   "entrypoints": [
     "static/css/main.e094f573.css",
-    "static/js/main.4f1786d5.js"
+    "static/js/main.c27a7680.js"
   ]
 }
